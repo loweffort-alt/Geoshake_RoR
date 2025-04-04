@@ -3,7 +3,7 @@ import * as React from "react";
 
 const Search = ({ updateLink }) => {
   const inputRef = React.useRef(null);
-  const [searchLink, setSearchLink] = React.useState("http://127.0.0.1:3000");
+  const [searchLink, setSearchLink] = React.useState("http://127.0.0.1:3000/api/features?page=1&per_page=10");
 
   function handleChange(event) {
     const newLink = event.target.value;

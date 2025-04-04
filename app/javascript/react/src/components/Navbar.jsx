@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <section className="w-full bg-white text-lg flex justify-between text-black items-center pt-2 pb-1 px-10">
-      <div>Icon</div>
+      <div>Logo</div>
       <div className="flex items-center gap-10 font-medium text-[#c4c6cd]">
         <h2 className="text-black transition duration-150 ease:out hover:cursor-pointer hover:text-black hover:ease-in">
           Overview

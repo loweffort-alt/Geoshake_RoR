@@ -87,7 +87,9 @@ module Api
             external_id: feature.external_id,
             magnitude: feature.magnitude,
             place: feature.place,
-            time: feature.time,
+            epochtime: feature.time,
+            date: feature.date,
+            hour: feature.hour,
             title: feature.title,
             coordinates: {
               longitude: feature.longitude,
