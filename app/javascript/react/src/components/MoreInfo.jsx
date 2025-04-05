@@ -48,19 +48,6 @@ const MoreInfo = () => {
         </a>
         .
       </p>
-      <p className="mb-3 text-gray-500">
-        <span className="font-bold">Paso 3:</span> También podemos filtrar la
-        data por <span className="font-bold">mg_type</span> escribiendo los
-        tipos que quieres separados por una coma, por ejemplo:{" "}
-        <a
-          href="http://127.0.0.1:3000/api/features?page=1&per_page=1000&mag_type=md,ml"
-          className="font-medium text-blue-600 underline hover:text-blue-700 hover:no-underline"
-          target="_blank"
-        >
-          http://127.0.0.1:3000/api/features?page=1&per_page=1000&mag_type=md,ml
-        </a>
-        .
-      </p>
     </section>
   );
 };
