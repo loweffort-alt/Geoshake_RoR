@@ -33,21 +33,6 @@ const MoreInfo = () => {
         </a>
         .
       </p>
-      <p className="mb-3 text-gray-500">
-        <span className="font-bold">Paso 3:</span>Ahora probaremos la
-        paginación, para esto tenemos modificar el número en{" "}
-        <span className="font-bold">pages</span>, también podemos limitar la
-        cantidad de datos por página en{" "}
-        <span className="font-bold">per_page</span>{" "}
-        <a
-          href="http://127.0.0.1:3000/api/features?page=3&per_page=50&mag_type=md,ml"
-          className="font-medium text-blue-600 underline hover:text-blue-700 hover:no-underline"
-          target="_blank"
-        >
-          http://127.0.0.1:3000/api/features?page=6&per_page=250
-        </a>
-        .
-      </p>
     </section>
   );
 };
