@@ -8,7 +8,7 @@ import LinkDenied from "./LinkDenied";
 const MainContent = () => {
   const [apiData, setApiData] = React.useState(null);
   const [activeIndex, setActiveIndex] = React.useState(false);
-  const [link, setLink] = React.useState("http://127.0.0.1:3000/api/features?page=1&per_page=10");
+  const [link, setLink] = React.useState("<url>/api/features?page=1&per_page=10");
   const [showData, setShowData] = React.useState(false);
 
   function updateLink(newLink) {
@@ -27,7 +27,7 @@ const MainContent = () => {
       }
     };
 
-    if (link.startsWith("http://127.0.0.1:3000/api/features")) {
+    if (link.startsWith("http://")) {
       fetchData(link);
       setShowData(true);
       console.log("eureka");
