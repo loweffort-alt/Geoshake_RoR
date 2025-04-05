@@ -4,14 +4,14 @@ import * as React from "react";
 const MoreInfo = () => {
   return (
     <section className="flex flex-col w-1/2 border-[#ededed] border-l-2 p-5 h-full text-sm">
-      <h1 className="text-3xl font-extrabold">Hola Frogmi!</h1>
+      <h1 className="text-3xl font-extrabold">Bienvenido a GeoShake!</h1>
       <p className="mb-3 text-gray-500">
-        Soy Alex Farfán y esta es mi prueba técnica para el puesto de Software
-        Development Engineer. He desarrollado esta aplicación utilizando Rails,
-        React y Tailwind, incluyendo todas las funcionalidades requeridas en la
-        prueba técnica. También he añadido algunas características visuales
-        extra, aunque actualmente están limitadas a una representación visual y
-        no tienen funcionalidad operativa.
+        <span className="font-bold">Aplicación Android</span> que recopila datos del acelerómetro en tiempo real y
+        los envía automáticamente a <span className="font-bold">Firebase</span> tras la publicación de un nuevo informe
+        sísmico por parte del IGP. Estos datos se integran en una plataforma web
+        construida con <span className="font-bold">Ruby on Rails</span> (backend) y <span className="font-bold">React</span> (frontend), la cual también
+        contiene un historial de más de 25,000 sismos en Perú desde 1960, optimizado
+        mediante preprocesamiento con <span className="font-bold">Rust</span>.
       </p>
 
       <h1 className="text-2xl font-extrabold">¿Cómo usar la app?</h1>

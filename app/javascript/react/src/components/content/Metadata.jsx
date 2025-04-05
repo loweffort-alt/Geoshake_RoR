@@ -6,7 +6,7 @@ const Metadata = ({ dataAmount, totalDataAmount }) => {
     <section className="w-full">
       <div className="flex items-center justify-between px-5 py-2">
         <div className="text-lg font-medium">
-          Showing {dataAmount ? dataAmount : 0} results of{" "}
+          Mostrando {dataAmount ? dataAmount : 0} resultados de{" "}
           {totalDataAmount ? totalDataAmount : 0}
         </div>
         <div>

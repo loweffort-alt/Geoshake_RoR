@@ -3,9 +3,9 @@ import * as React from "react";
 const FilterState = () => {
   return (
     <div className="flex flex-col gap-3">
-      <h2 className="text-xl font-bold">State</h2>
+      <h2 className="text-xl font-bold">Provincia</h2>
       <div className="flex justify-between rounded-md border-2 border-gray-200 p-1 px-3 items-center hover:cursor-text">
-        <h2 className="text-[#c4c6cd]">Search</h2>
+        <h2 className="text-[#c4c6cd]">Buscar</h2>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

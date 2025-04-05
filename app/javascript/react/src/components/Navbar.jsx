@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const handleLoadData = () => {
     setLoading(true);
-    fetch("http://127.0.0.1:3000/data_saver")
+    fetch("http://127.0.0.1:3000/no_data")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -21,16 +21,18 @@ const Navbar = () => {
       .catch((error) => {
         console.error("Error fetching data:", error);
         setLoading(false);
-        alert("Error loading data.");
+        alert("Esta es una versión de prueba, no se puede cargar la data por limitaciones de hardware en AWS");
       });
   };
 
   return (
-    <section className="w-full bg-white text-lg flex justify-between text-black items-center pt-2 pb-1 px-10">
-      <div>Logo</div>
+    <section className="w-full text-lg flex justify-between text-black items-center pt-2 pb-1 px-10">
+      <div className="h-full">
+        <img src="/assets/navbarLogo.png" alt="Logo" className="w-16" />
+      </div>
       <div className="flex items-center gap-10 font-medium text-[#c4c6cd]">
         <h2 className="text-black transition duration-150 ease:out hover:cursor-pointer hover:text-black hover:ease-in">
-          Overview
+          Base de datos
         </h2>
         <h2 className="transition duration-150 ease:out hover:cursor-pointer hover:text-black hover:ease-in">
           Live seismograph
@@ -44,7 +46,7 @@ const Navbar = () => {
       </div>
       <button
         type="button"
-        className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+        className="text-white bg-slate-500 hover:bg-slate-800 line-through font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
         onClick={handleLoadData}
         disabled={loading}
       >
